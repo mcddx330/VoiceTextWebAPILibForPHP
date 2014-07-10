@@ -1,7 +1,7 @@
-VoiceTextAPILibForPHP
+VoiceTextWebAPILibForPHP
 =====================
 
-VoiceTextAPILib forPHPは、VoiceText WebAPIをPHPで利用可能にするライブラリです。
+VoiceTextWebAPILib forPHPは、VoiceText WebAPIをPHPで利用可能にするライブラリです。
 
 **必要なもの**
  - php5-curl
