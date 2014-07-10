@@ -52,11 +52,11 @@
 			if(mb_strlen($this->speaker)==0){
 				$this->speaker = "show";
 			}
-			//ショウ君が選ばれている時に表情、表情パラメータが選ばれている場合は無効化する
-			if((isset($this->emote)==true || isset($this->level)) && $this->speaker==="show"){
+			//ショウ君が選ばれている時に表情、表情レベルパラメータが選ばれている場合は無効化する
+			if(isset($this->emote)==true && $this->speaker==="show"){
 				$this->emote=null;
 				$this->level=null;
-				$msg = "ショウ君には表情・表情レベルの調整がかけられないため、デフォルト値に変更しました";
+				$msg = "ショウ君には表情、表情レベルの調整がかけられないため、デフォルト値で処理しました。";
 			}else{
 				$msg = null;
 			}

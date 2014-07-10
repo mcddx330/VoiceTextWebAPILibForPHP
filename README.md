@@ -1,7 +1,7 @@
 VoiceTextAPILibForPHP
 =====================
 
-VoiceTextAPILib forPHPは、VoiceText CloudAPIをPHPで利用可能にするライブラリです。
+VoiceTextAPILib forPHPは、VoiceText WebAPIをPHPで利用可能にするライブラリです。
 
 **必要なもの**
  - php5-curl
@@ -42,24 +42,14 @@ $res = $vt->run();
 
 ***生成成功時***
 
-```
-
  - path : wavまでのパス
 
- - msg : 不正な値が検出されたときに出力（現時点ではショウ君に表情パラメータを付加した時のみ）
-
-```
-
+ - msg : 不正な値が検出された時に出力（現時点ではショウ君に表情パラメータを付加した時のみ）
 ***生成失敗時***
-
-```
 
  - code : HTTPコード200番以外を受け取った時に出力
 
- - err : 音量などのパラメータが不正な場合に出力
-
-
-```
+ - err : 音量などのパラメータが不正な時に出力
 
 **サンプル**
 
